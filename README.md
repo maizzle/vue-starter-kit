@@ -1,27 +1,29 @@
-# Laravel + Vue Starter Kit
+# Laravel + Vue + Maizzle Starter Kit
 
-## Introduction
+## About
 
-Our Vue starter kit provides a robust, modern starting point for building Laravel applications with a Vue frontend using [Inertia](https://inertiajs.com).
+The official [Laravel Vue starter kit](https://laravel.com/docs/starter-kits) with Maizzle 6 for HTML emails.
 
-Inertia allows you to build modern, single-page Vue applications using classic server-side routing and controllers. This lets you enjoy the frontend power of Vue combined with the incredible backend productivity of Laravel and lightning-fast Vite compilation.
+## Maizzle
 
-This Vue starter kit utilizes Vue 3 and the Composition API, TypeScript, Tailwind, and the [shadcn-vue](https://www.shadcn-vue.com) component library.
+[Maizzle](https://maizzle.com) is a framework that helps you quickly build HTML emails with Tailwind CSS.
 
-## Official Documentation
+This starter kit uses Maizzle 6 as a Vite plugin, which is currently in beta.
 
-Documentation for all Laravel starter kits can be found on the [Laravel website](https://laravel.com/docs/starter-kits).
+## Usage
 
-## Contributing
+```sh
+# Install dependencies
+composer install 
+npm install
 
-Thank you for considering contributing to our starter kit! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Start the development server
+composer dev
 
-All contributions to the Starter Kits from now on should be made through [Maestro](https://github.com/laravel/maestro).
+# Build assets for production
+npm run build
+```
 
-## Code of Conduct
+Building for production will generate the HTML emails in `resources/views/emails`.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## License
-
-The Laravel + Vue starter kit is open-sourced software licensed under the MIT license.
+You may configure Maizzle in `vite.config.ts`.
