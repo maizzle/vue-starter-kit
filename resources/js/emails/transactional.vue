@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Layout from '../components/email/Layout.vue';
-
   defineConfig({
     title: 'Welcome to Maizzle',
   })
